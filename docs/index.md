@@ -5,13 +5,13 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">(Your Name) Datasheet</font><br>
+<font size= "6">William Buckner's Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Fantastically Wonderful Project</font><br>
 for<br>
-<font size= "5"> Team ### </font><br>
+<font size= "5"> Team 105 </font><br>
 
-**Submission: month, DD, YYYY**
+**Submission: September, 2, 2026**
 </center>
 
 ## Introduction
