@@ -8,7 +8,7 @@ tags:
 ## Overview
 This needs to be updated with a brief purpose for having the block diagram.
 Things to mention are:
-* power levels
+* test
 * sensor
 * Actuator
 * team connections
