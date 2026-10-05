@@ -10,10 +10,3 @@ This is a block diagram of my planned circuit for group 105. The main component 
 
 
 ![Individual Block Diagram](individual-block-diagram-Buckner.drawio.png)
-
-
-<p align="center">
-  <img src="individual-block-diagram-Buckner.drawio.png"
-       alt="Individual Block Diagram"
-       width="1000">
-</p>
