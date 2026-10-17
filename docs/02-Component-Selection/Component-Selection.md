@@ -14,7 +14,7 @@ title: Component Selection Example
 
 **Choice:** Option 2: Microchip MCP4911-E/MS 10-bit DAC
 
-**Rationale:** The MCP4911 was selected because its 10-bit resolution provides 1024 discrete output levels, compared with only 256 levels from the PIC's internal 8-bit DAC. This provides improved resolution for recorded speech and audio while maintaining a simple SPI interface and compatibility with the board's 5 V power system. The MCP4921 provides greater 12-bit resolution, but this additional resolution is not necessary for the intended speech, tone, and alert playback application. The MCP4911 therefore provides a balance between audio resolution, cost, and PCB complexity.
+**Rationale:** The MCP4911 was selected because its 10-bit resolution provides 1024 discrete output levels, compared with only 256 levels from the PIC's internal 8-bit DAC. This provides improved resolution for recorded speech and audio while maintaining a simple SPI interface and compatibility with the board's 5 V power system. The MCP4921 provides greater 12-bit resolution, but this additional resolution is not necessary for the intended speech, tone, and alert playback application. The MCP4911 therefore provides a balance between audio resolution, cost, and PCB design complexity.
 
 
 <br>
@@ -32,7 +32,7 @@ title: Component Selection Example
 
 **Choice:** Option 1: Diodes Incorporated PAM8302A
 
-**Rationale:** The PAM8302A was selected because its Class-D architecture provides high efficiency while operating directly from the project's 5 V supply. It can provide approximately 2 W to a 4 Ω speaker, closely matching the requirements of the selected speaker. Compared with the LM4871, the PAM8302A wastes less power as heat, which is important because the speaker board receives power through the primary board's VBUS connection. It also provides a better combination of output capability, cost, and efficiency than the TPA2005D1.
+**Rationale:** The PAM8302A was selected because its Class-D architecture provides high efficiency while operating directly from the 5 V supply. It can provide approximately 2 W to a 4 Ω speaker, closely matching the requirements of the selected speaker. Compared with the LM4871, the PAM8302A wastes less power as heat, which is important because the speaker board receives power through the primary board's VBUS connection. It also provides a better combination of output capability, cost, and efficiency than the TPA2005D1.
 
 
 <br>
@@ -51,4 +51,4 @@ title: Component Selection Example
 
 **Choice:** Option 2: Same Sky CMS-40504N-L152
 
-**Rationale:** The CMS-40504N-L152 was selected because its 4 Ω impedance and 2 W continuous power rating closely match the output capabilities of the selected PAM8302A amplifier. Its 40 mm diameter provides a larger radiating surface than the 18 mm alternative while remaining only 5 mm thick. Its 400 Hz to 7 kHz frequency range is appropriate for the primary requirements of intelligible speech, alerts, and generated tones. The larger PUI Audio speaker provides greater frequency range and power handling, but the additional size and power capability are unnecessary for the available amplifier output.
+**Rationale:** The CMS-40504N-L152 was selected because its 4 Ω impedance and 2 W continuous power rating closely match the output capabilities of the selected PAM8302A amplifier. Its 40 mm diameter provides a larger radiating surface than the 18 mm alternative while remaining only 5 mm thick. Its 400 Hz to 7 kHz frequency range should be adequate for intelligible speech, alerts, and generated tones. The larger PUI Audio speaker provides greater frequency range and power handling, but the additional size and power capability are unnecessary for the available amplifier output.
