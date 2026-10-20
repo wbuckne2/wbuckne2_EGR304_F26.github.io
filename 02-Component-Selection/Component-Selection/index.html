@@ -777,17 +777,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../internal-dac.png" data-desc-position="bottom"><img alt="" src="../internal-dac.png"></a><br><strong>Option 1.</strong><br>PIC18F57Q43 Internal 8-bit DAC<br>$0 additional cost<br><a href="https://www.microchip.com/en-us/product/PIC18F57Q43">PIC18F57Q43 Datasheet</a></td>
+<td><br><strong>Option 1.</strong><br>PIC18F57Q43 Internal 8-bit DAC<br>$0 additional cost<br><a href="https://www.microchip.com/en-us/product/PIC18F57Q43">PIC18F57Q43 Datasheet</a></td>
 <td>* No additional IC required<br><em> No additional PCB space required<br></em> No additional cost<br><em> No SPI communication required<br></em> 8-bit output is sufficient for basic tones and speech</td>
 <td>* Limited to 256 output levels<br><em> Lower audio resolution than external DAC options<br></em> Uses an internal PIC peripheral</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mcp4911.png" data-desc-position="bottom"><img alt="" src="../mcp4911.png"></a><br><strong>Option 2.</strong><br>Microchip MCP4911-E/MS<br>10-bit SPI DAC<br>$1.83/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP4911-E-MS/2332825">DigiKey Product Page</a></td>
+<td><br><strong>Option 2.</strong><br>Microchip MCP4911-E/MS<br>10-bit SPI DAC<br>$1.83/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP4911-E-MS/2332825">DigiKey Product Page</a></td>
 <td>* 1024 output levels<br><em> Four times as many output levels as an 8-bit DAC<br></em> 2.7–5.5 V supply is compatible with the 5 V system<br><em> Simple SPI interface<br></em> Buffered voltage output<br>* Good balance between resolution and cost</td>
 <td>* Requires an additional IC<br><em> Requires additional PCB space<br></em> Requires SPI connections to the PIC<br>* Requires an external voltage reference</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mcp4921.png" data-desc-position="bottom"><img alt="" src="../mcp4921.png"></a><br><strong>Option 3.</strong><br>Microchip MCP4921-E/SN<br>12-bit SPI DAC<br>$2.62/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP4921-E-SN/716196">DigiKey Product Page</a></td>
+<td><br><strong>Option 3.</strong><br>Microchip MCP4921-E/SN<br>12-bit SPI DAC<br>$2.62/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP4921-E-SN/716196">DigiKey Product Page</a></td>
 <td>* 4096 output levels<br><em> Highest resolution of the three options<br></em> 2.7–5.5 V supply is compatible with the 5 V system<br><em> Simple SPI interface<br></em> SOIC package is relatively easy to solder</td>
 <td>* Highest cost of the three options<br><em> Requires an additional IC and PCB space<br></em> Requires SPI connections to the PIC<br><em> 12-bit resolution may be unnecessary for speech, tones, and alerts<br></em> Requires an external voltage reference</td>
 </tr>
@@ -809,17 +809,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../pam8302a.png" data-desc-position="bottom"><img alt="" src="../pam8302a.png"></a><br><strong>Option 1.</strong><br>Diodes Incorporated PAM8302A<br>Class-D Mono Audio Amplifier<br>~$0.66/each<br><a href="https://www.diodes.com/part/view/PAM8302A">PAM8302A Product Information</a></td>
+<td><br><strong>Option 1.</strong><br>Diodes Incorporated PAM8302A<br>Class-D Mono Audio Amplifier<br>~$0.66/each<br><a href="https://www.diodes.com/part/view/PAM8302A">PAM8302A Product Information</a></td>
 <td>* Class-D design provides high efficiency<br><em> Designed to drive low-impedance speakers<br></em> Approximately 2 W output into 4 Ω at 5 V with low distortion<br><em> 2–5.5 V supply range is compatible with the 5 V system<br></em> BTL output does not require a large speaker output coupling capacitor<br>* Small component count</td>
 <td>* Surface-mount package is more difficult to solder than through-hole components<br><em> Class-D switching makes PCB layout more important<br></em> Differential speaker output means neither speaker terminal can be connected to ground</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../tpa2005d1.png" data-desc-position="bottom"><img alt="" src="../tpa2005d1.png"></a><br><strong>Option 2.</strong><br>Texas Instruments TPA2005D1DRBR<br>Class-D Mono Audio Amplifier<br>$1.08/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPA2005D1DRBR/565590">DigiKey Product Page</a></td>
+<td><br><strong>Option 2.</strong><br>Texas Instruments TPA2005D1DRBR<br>Class-D Mono Audio Amplifier<br>$1.08/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPA2005D1DRBR/565590">DigiKey Product Page</a></td>
 <td>* High-efficiency Class-D amplifier<br><em> 2.5–5.5 V supply is compatible with the 5 V system<br></em> Differential input<br><em> Includes thermal and short-circuit protection<br></em> Low power consumption</td>
 <td>* More expensive than the PAM8302A<br><em> Lower useful output capability for this application<br></em> Small exposed-pad package is difficult to hand solder<br>* PCB layout is more difficult due to the package and Class-D switching</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../lm4871.png" data-desc-position="bottom"><img alt="" src="../lm4871.png"></a><br><strong>Option 3.</strong><br>Texas Instruments LM4871M/NOPB<br>Class-AB Mono Audio Amplifier<br>$1.92/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM4871M-NOPB/364185">DigiKey Product Page</a></td>
+<td><br><strong>Option 3.</strong><br>Texas Instruments LM4871M/NOPB<br>Class-AB Mono Audio Amplifier<br>$1.92/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM4871M-NOPB/364185">DigiKey Product Page</a></td>
 <td>* 2–5.5 V supply is compatible with the 5 V system<br><em> SOIC-8 package is easier to solder<br></em> Simple analog amplifier architecture<br><em> Includes shutdown and thermal protection<br></em> Capable of driving low-impedance speakers</td>
 <td>* Class-AB design is less efficient than Class-D alternatives<br><em> Greater power loss occurs as heat<br></em> Highest cost of the three options<br>* Lower efficiency is undesirable when the board is powered from another board's VBUS</td>
 </tr>
@@ -841,17 +841,17 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../cms-1852-24sp.png" data-desc-position="bottom"><img alt="" src="../cms-1852-24sp.png"></a><br><strong>Option 1.</strong><br>Same Sky CMS-1852-24SP<br>4 Ω, 2 W Speaker<br>$3.52/each<br><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-1852-24SP/21284683">DigiKey Product Page</a></td>
+<td><br><strong>Option 1.</strong><br>Same Sky CMS-1852-24SP<br>4 Ω, 2 W Speaker<br>$3.52/each<br><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-1852-24SP/21284683">DigiKey Product Page</a></td>
 <td>* Very compact 18 mm diameter<br><em> 4 Ω impedance is compatible with the selected amplifier<br></em> 2 W power rating closely matches amplifier output<br><em> 300 Hz–20 kHz specified frequency range<br></em> Lowest-cost speaker option</td>
 <td>* Small diaphragm limits acoustic output and low-frequency performance<br><em> Lower specified sound pressure level than larger options<br></em> May provide lower-volume speech than larger speakers</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../cms-40504n-l152.png" data-desc-position="bottom"><img alt="" src="../cms-40504n-l152.png"></a><br><strong>Option 2.</strong><br>Same Sky CMS-40504N-L152<br>4 Ω, 2 W Speaker<br>$6.23/each<br><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-40504N-L152/6137739">DigiKey Product Page</a></td>
+<td><br><strong>Option 2.</strong><br>Same Sky CMS-40504N-L152<br>4 Ω, 2 W Speaker<br>$6.23/each<br><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/CMS-40504N-L152/6137739">DigiKey Product Page</a></td>
 <td>* 4 Ω impedance closely matches the PAM8302A<br><em> 2 W rated power closely matches amplifier output<br></em> Larger 40 mm diaphragm than Option 1<br><em> Only 5 mm thick<br></em> 400 Hz–7 kHz frequency range is appropriate for speech and alerts<br>* Good balance between physical size and audio output</td>
 <td>* Larger diameter than Option 1<br><em> More expensive than the smaller speaker<br></em> 7 kHz upper frequency limit reduces high-frequency reproduction compared with wider-band options</td>
 </tr>
 <tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../as07104po-r.png" data-desc-position="bottom"><img alt="" src="../as07104po-r.png"></a><br><strong>Option 3.</strong><br>PUI Audio AS07104PO-R<br>4 Ω, 3 W Speaker<br>$7.42/each<br><a href="https://www.digikey.com/en/products/detail/pui-audio-inc/AS07104PO-R/2763867">DigiKey Product Page</a></td>
+<td><br><strong>Option 3.</strong><br>PUI Audio AS07104PO-R<br>4 Ω, 3 W Speaker<br>$7.42/each<br><a href="https://www.digikey.com/en/products/detail/pui-audio-inc/AS07104PO-R/2763867">DigiKey Product Page</a></td>
 <td>* 100 Hz–20 kHz specified frequency range<br><em> Better potential low-frequency reproduction<br></em> 3 W rated and 5 W maximum power handling<br><em> 4 Ω impedance is compatible with the amplifier<br></em> Largest speaker may provide stronger acoustic output</td>
 <td>* Significantly larger at approximately 71 x 41 x 25 mm<br><em> Most expensive speaker option<br></em> PAM8302A cannot utilize the speaker's full power capability<br>* Large size makes enclosure integration more difficult</td>
 </tr>
