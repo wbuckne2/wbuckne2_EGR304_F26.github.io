@@ -7,8 +7,8 @@ title: Schematic
 This schematic is designed to support audio playback using a speaker. There is an independent DAC component, as well as the potential to use the onboard PIC DAC in the event that the component has issues. There is an audio amplifier using the MCP6004.
 
 
-![](Screenshot.png)
-**Figure ##:** Speaker Schematic 
+![](screenshot.png)
+**Figure ##:** Project Schematic  
 
 
 ## Resouces
