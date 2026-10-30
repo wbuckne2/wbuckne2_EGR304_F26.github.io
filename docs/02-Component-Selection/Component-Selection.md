@@ -15,7 +15,9 @@ title: Component Selection
 **Choice:** Option 2: Microchip MCP4911-E/MS 10-bit DAC
 
 **Rationale:** The MCP4911 was selected because its 10-bit resolution provides 1024 discrete output levels, compared with only 256 levels from the PIC's internal 8-bit DAC. This provides improved resolution for recorded speech and audio while maintaining a simple SPI interface and compatibility with the board's 5 V power system. The MCP4921 provides greater 12-bit resolution, but this additional resolution is not necessary for the intended speech, tone, and alert playback application. The MCP4911 therefore provides a balance between audio resolution, cost, and PCB design complexity.
+<br>
 
+Both the MCP4911 and the PIC's onboard DAC are included in the final design to provide redundancy during testing. A solderable jumper allows either DAC to be connected to the amplifier input. The MCP4911 is intended to be the primary audio source, while the onboard DAC provides a fallback if problems occur with the external DAC or SPI communication.
 
 <br>
 <br>
@@ -34,10 +36,8 @@ title: Component Selection
 
 **Rationale:** The MCP6004 was selected because it provides the necessary performance for the custom speaker amplifier while remaining compatible with the board's 5 V supply. Its rail-to-rail input and output operation allows the audio circuit to operate around the 2.5 V reference used by the single-supply amplifier, while its 1 MHz gain-bandwidth product is sufficient for the intended speech, warning tones, and other audio signals. Although the LMV324A and TLV9004 provide improved slew-rate performance, this additional performance is not necessary for the intended audio bandwidth. The MCP6004 has also been used in previous lab assignments, meaning I am already familiar with how to setup and use the component. The MCP6004 does not directly power the 4 Ω speaker; instead, it controls the discrete BD139/BD140 complementary transistor output stage that supplies the required speaker current.
 
-
 <br>
 <br>
-
 
 *Table 3: Speaker component selection*
 
@@ -58,7 +58,7 @@ title: Component Selection
 <br>
 
 
-*Table 3: Power transistor component selection*
+*Table 4: Power transistor component selection*
 
 **Complementary Power Transistors — Individual Speaker Subsystem**
 
@@ -71,3 +71,16 @@ title: Component Selection
 **Choice:** Option 1: STMicroelectronics BD139 / BD140 Complementary Transistor Pair
 
 **Rationale:** The BD139 and BD140 were selected because they are complementary NPN and PNP transistors specifically intended for audio amplifier and driver applications. Their 1.5 A continuous and 3 A peak collector-current ratings provide sufficient current capability for the custom 4 Ω speaker driver without the unnecessary size and current capability of larger power transistors. The BD135/BD136 pair provides similar performance but offers little advantage for this application, while the TIP41C/TIP42C pair has significantly greater current and power capability than the 5 V speaker circuit requires. The BD139/BD140 pair therefore provides the best balance of current capability, physical size, ease of assembly, and suitability for the custom Class-AB output stage.
+
+
+*Table 5: Voltage regulator component selection*
+
+**Voltage Regulator — Individual Speaker Subsystem**
+
+| **Solution** | **Pros** | **Cons** |
+|---|---|---|
+| ![](lm7805.png)<br>**Option 1.**<br>STMicroelectronics L7805CV<br>5 V Linear Voltage Regulator<br>$1.08/each<br>[DigiKey L7805CV Product Page](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964) | * Provides a fixed 5 V output<br>* Rated for up to 1.5 A output current<br>* Compatible with the board's 9 V input<br>* Through-hole TO-220 package is easy to solder and prototype<br>* Includes over-temperature and short-circuit protection<br>* Previously used during class labs, reducing design and troubleshooting complexity | * Linear regulation causes power to be dissipated as heat<br>* Less efficient than a switching regulator<br>* May require additional thermal management at higher current loads<br>* Requires external input and output bypass capacitors |
+
+**Choice:** Option 1: STMicroelectronics L7805CV 5 V Linear Voltage Regulator
+
+**Rationale:** Ultimately the decision to use this component came down to us having used it quite a bit for labs in class. I already have experience using the component, I know how to build a circuit with it, and haven't had any issues the multiple times that I have used it. 

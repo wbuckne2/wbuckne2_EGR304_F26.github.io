@@ -7,12 +7,15 @@ tags:
 <center>
 <font size= "6">William Buckner's Datasheet</font><br>
 as part of<br>
-<font size= "8"> The Radiolink</font><br>
+<font size= "8">RadioLink</font><br>
 for<br>
 <font size= "5"> Team 105 </font><br>
 
-**Submission: October, 26, 2026**
+**Submission: October, 30, 2026**
+<br>[RadioLink Main Website](https://asu-egr304-2026-f-105.github.io/EGR304-2026-F-105.github.io/)<br>
 </center>
+
+
 
 ## Introduction
 
