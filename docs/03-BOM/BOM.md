@@ -10,7 +10,7 @@ The Bill of Materials (BOM) lists the components needed to build the speaker sub
 
 ## Bill of Materials
 
-![Bill of Materials](BOM-Screenshot.PNG)
+![Project Schematic](../static/BOM-Screenshot.PNG)
 
 **Figure 2:** Bill of Materials Screenshot
 
