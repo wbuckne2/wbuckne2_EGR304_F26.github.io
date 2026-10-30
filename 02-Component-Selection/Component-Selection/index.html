@@ -787,7 +787,9 @@
 </tbody>
 </table>
 <p><strong>Choice:</strong> Option 2: Microchip MCP4911-E/MS 10-bit DAC</p>
-<p><strong>Rationale:</strong> The MCP4911 was selected because its 10-bit resolution provides 1024 discrete output levels, compared with only 256 levels from the PIC's internal 8-bit DAC. This provides improved resolution for recorded speech and audio while maintaining a simple SPI interface and compatibility with the board's 5 V power system. The MCP4921 provides greater 12-bit resolution, but this additional resolution is not necessary for the intended speech, tone, and alert playback application. The MCP4911 therefore provides a balance between audio resolution, cost, and PCB design complexity.</p>
+<p><strong>Rationale:</strong> The MCP4911 was selected because its 10-bit resolution provides 1024 discrete output levels, compared with only 256 levels from the PIC's internal 8-bit DAC. This provides improved resolution for recorded speech and audio while maintaining a simple SPI interface and compatibility with the board's 5 V power system. The MCP4921 provides greater 12-bit resolution, but this additional resolution is not necessary for the intended speech, tone, and alert playback application. The MCP4911 therefore provides a balance between audio resolution, cost, and PCB design complexity.
+<br></p>
+<p>Both the MCP4911 and the PIC's onboard DAC are included in the final design to provide redundancy during testing. A solderable jumper allows either DAC to be connected to the amplifier input. The MCP4911 is intended to be the primary audio source, while the onboard DAC provides a fallback if problems occur with the external DAC or SPI communication.</p>
 <p><br>
 <br></p>
 <p><em>Table 2: Operational amplifier component selection</em></p>
@@ -854,7 +856,7 @@
 <p><strong>Rationale:</strong> The CMS-40504N-L152 was selected because its 4 Ω impedance and 2 W continuous power rating closely match the output capabilities of the selected PAM8302A amplifier. Its 40 mm diameter provides a larger radiating surface than the 18 mm alternative while remaining only 5 mm thick. Its 400 Hz to 7 kHz frequency range should be adequate for intelligible speech, alerts, and generated tones. The larger PUI Audio speaker provides greater frequency range and power handling, but the additional size and power capability are unnecessary for the available amplifier output.</p>
 <p><br>
 <br></p>
-<p><em>Table 3: Power transistor component selection</em></p>
+<p><em>Table 4: Power transistor component selection</em></p>
 <p><strong>Complementary Power Transistors — Individual Speaker Subsystem</strong></p>
 <table>
 <thead>
@@ -884,6 +886,26 @@
 </table>
 <p><strong>Choice:</strong> Option 1: STMicroelectronics BD139 / BD140 Complementary Transistor Pair</p>
 <p><strong>Rationale:</strong> The BD139 and BD140 were selected because they are complementary NPN and PNP transistors specifically intended for audio amplifier and driver applications. Their 1.5 A continuous and 3 A peak collector-current ratings provide sufficient current capability for the custom 4 Ω speaker driver without the unnecessary size and current capability of larger power transistors. The BD135/BD136 pair provides similar performance but offers little advantage for this application, while the TIP41C/TIP42C pair has significantly greater current and power capability than the 5 V speaker circuit requires. The BD139/BD140 pair therefore provides the best balance of current capability, physical size, ease of assembly, and suitability for the custom Class-AB output stage.</p>
+<p><em>Table 5: Voltage regulator component selection</em></p>
+<p><strong>Voltage Regulator — Individual Speaker Subsystem</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="../lm7805.png" /><br><strong>Option 1.</strong><br>STMicroelectronics L7805CV<br>5 V Linear Voltage Regulator<br>$1.08/each<br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964">DigiKey L7805CV Product Page</a></td>
+<td>* Provides a fixed 5 V output<br><em> Rated for up to 1.5 A output current<br></em> Compatible with the board's 9 V input<br><em> Through-hole TO-220 package is easy to solder and prototype<br></em> Includes over-temperature and short-circuit protection<br>* Previously used during class labs, reducing design and troubleshooting complexity</td>
+<td>* Linear regulation causes power to be dissipated as heat<br><em> Less efficient than a switching regulator<br></em> May require additional thermal management at higher current loads<br>* Requires external input and output bypass capacitors</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 1: STMicroelectronics L7805CV 5 V Linear Voltage Regulator</p>
+<p><strong>Rationale:</strong> Ultimately the decision to use this component came down to us having used it quite a bit for labs in class. I already have experience using the component, I know how to build a circuit with it, and haven't had any issues the multiple times that I have used it. </p>
 
 
 
