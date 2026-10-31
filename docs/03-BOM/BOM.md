@@ -10,8 +10,8 @@ The Bill of Materials (BOM) lists the components needed to build the speaker sub
 
 ## Bill of Materials
 
-![Project Schematic](../static/BOM-Screenshot.PNG)
+![Project Schematic](../static/BOM-Screenshot2.PNG)
 
 **Figure 2:** Bill of Materials Screenshot
 
-The power budget as a PDF download is available [*here*](Team_105_BOM-Buckner.pdf), and a Microsoft Excel Sheet [*here*](Team_105_BOM-Buckner.xlsm).
+The power budget as a PDF download is available [*here*](BOM.pdf), and a Microsoft Excel Sheet [*here*](BOM.xlsm).
