@@ -9,7 +9,7 @@ This design satisfies the need for reliable and understandable audio output whil
 
 ![Project Schematic](../static/speaker-schematic-v3.png)
 
-**Figure ##:** Project Schematic
+ Project Schematic
 
 ## Resources
 
